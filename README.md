@@ -1,0 +1,2 @@
+# reactServiceWorker
+curl -X POST -H "Authorization: key=AIzaSyBj-TB4pChlG-ihgIpHvApFFjBeiRUPR-A" -H "Content-Type: application/json" -d '{"notification": {    "title": "Portugal vs. Denmark",    "body": "5 to 1",    "icon": "firebase-logo.png",    "click_action": "http://google.com"  },  "to": "AAAASMpYJKU:APA91bHwb46rb0GmLqcp_ryixC_8bW5gUd0lHcULOY6jjaRbaQnnXn1446z9-R1Udr0n9kSp8QtsLnfiV1bNCY6gJ-2W_LZ6_nVkwYMxf6G5OMK5DirpPUBam5gwOxUdOq--toqU6m97"}' "https://fcm.googleapis.com/fcm/send"
