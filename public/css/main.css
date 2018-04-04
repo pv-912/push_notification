@@ -1,0 +1,67 @@
+.parentDiv{
+	margin:10vh 18vw;
+border-radius:10px;
+-webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.5);
+}
+.readyToRockBtn {
+    width: 100%;
+    background-color: #7e93b0;
+    font-size: 1.4vw;
+    color: #fff;
+    padding: 8px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+}
+.firstDiv {
+    background-color: #f45a24;
+    color: #fff;
+    font-size: 2vw;
+    height:42vh;
+    text-align: center;
+    padding: 19vh 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.paddingDiv{
+	height: 25vh;
+    width: auto;
+	background-image: url("/img/img1.jpg");
+}
+.midDiv {
+    background-color: #C23E09;
+    height: 5vh;
+}
+
+@media only screen and (max-width: 768px) {
+	.parentDiv{
+		width: 100vw;
+	margin:0 !important;
+	border-radius: 0;
+	}
+	.readyToRockBtn {
+	    width: 100%;
+	    font-size: 4vw;
+	    padding: 12px 0px;
+	    border-bottom-left-radius: 0px;
+	    border-bottom-right-radius: 0px;
+	}
+	.firstDiv {
+	    font-size: 7vw;
+	    height:48vh;
+	    width: 100%;
+	    padding: 21vh 0;
+	    border-top-left-radius: 0px;
+	    border-top-right-radius: 0px;
+	}
+	.paddingDiv{
+		height: 40vh;
+	}
+	.midDiv {
+	    height: 5vh;
+	}
+
+
+}
