@@ -124,7 +124,7 @@ export const Function2 = () => {
                     'Authorization': 'key=AIzaSyBj-TB4pChlG-ihgIpHvApFFjBeiRUPR-A',
                     'Content-Type': 'application/json'
                 },
-                "data": "{\n\t\"notification\": {\n\t\t\"title\": \"Praktice.io\",\n\t\t\"body\": \"Prashant sent an attachment\",\n\t\t\"icon\": \"logo.png\",\n\t\t\"click_action\": \"http://localhost:3000/message\"\n\t\t\n\t},\n\t\"to\": \"/topics/rando\"\n}",
+                "data": "{\n\t\"notification\": {\n\t\t\"title\": \"Praktice.io\",\n\t\t\"body\": \"Prashant sent an attachment\",\n\t\t\"icon\": \"logo.png\",\n\t\t\"click_action\": \"https://service-worker.herokuapp.com/message\"\n\t\t\n\t},\n\t\"to\": \"/topics/rando\"\n}",
                 success: function(data){
                     window.location.href+="message";
                 }
@@ -135,3 +135,5 @@ export const Function2 = () => {
         });
     
 }
+
+

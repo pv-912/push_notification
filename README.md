@@ -10,7 +10,7 @@ curl -X POST \
 		"title": "Praktice.io",
 		"body": "Prashant sent an attachment",
 		"icon": "logo.png",
-		"click_action": "http://localhost:3000/message"
+		"click_action": "https://service-worker.herokuapp.com/message"
 		
 	},
 	"to": "/topics/rando"

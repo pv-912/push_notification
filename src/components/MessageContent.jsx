@@ -1,21 +1,5 @@
 import React from 'react';
 export default class MessageContent extends React.Component{
-    
-    constructor(props) {
-        super(props)
-        this.state = {
-            json: []
-        }
-    }
-
-    componentDidMount() {
-        this.setState((prevState) => {
-            return {
-                json: Contact
-            }
-        })
-    }
-
     render(){
         return(
         	<div>
