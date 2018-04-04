@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import HomeIndex from './components/Index';
+import MessageIndex from './components/MessageIndex';
 
 class App extends Component {
   render() {
@@ -11,6 +12,8 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomeIndex} />
           <Route path="/test" component={HomeIndex} />
+          <Route exact path="/message" component={MessageIndex} />
+
         </Switch>
       </BrowserRouter>
     );
