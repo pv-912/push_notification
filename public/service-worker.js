@@ -1,7 +1,8 @@
-var CACHE_NAME = 'my-pwa-cache-v1';
+var CACHE_NAME = 'praktice.ai app';
 var urlsToCache = [
   '/',
   '/index.html',
+  '/css/main.css'
 ];
 console.log("hello");
 self.addEventListener('install', function(event) {
