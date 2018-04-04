@@ -26,7 +26,7 @@ export const Function1 = () => {
                 'Content-Type': 'application/json'
         },
         success: function(data){
-            console.log(data);
+            // console.log(data);
         }
         });
     };

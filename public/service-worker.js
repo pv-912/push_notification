@@ -2,8 +2,8 @@ var CACHE_NAME = 'my-pwa-cache-v1';
 var urlsToCache = [
   '/',
   '/index.html',
-  '/css/main.css'
 ];
+console.log("hello");
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -11,6 +11,8 @@ self.addEventListener('install', function(event) {
         console.log('[ServiceWorker] Caching app shell');
         // Open a cache and cache our files
         return cache.addAll(urlsToCache);
+      }).catch((err)=>{
+        console.log("Caching app not possible");
       })
   );
 });
@@ -24,7 +26,9 @@ self.addEventListener('activate', function(e) {
           return caches.delete(key);
         }
       }));
-    })
+    }).catch((err)=>{
+        console.log("Caching app not possible");
+      })
   );
   return self.clients.claim();
 });
@@ -33,6 +37,8 @@ self.addEventListener('fetch', function(event) {
     event.respondWith(
         caches.match(event.request).then(function(response) {
             return response || fetch(event.request);
-        })
+        }).catch((err)=>{
+        console.log("Caching app not possible");
+      })
     );
 });
