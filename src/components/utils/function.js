@@ -126,7 +126,7 @@ export const Function2 = () => {
                 },
                 "data": "{\n\t\"notification\": {\n\t\t\"title\": \"Praktice.io\",\n\t\t\"body\": \"Prashant sent an attachment\",\n\t\t\"icon\": \"logo.png\",\n\t\t\"click_action\": \"http://localhost:3000/message\"\n\t\t\n\t},\n\t\"to\": \"/topics/rando\"\n}",
                 success: function(data){
-                    console.log(data);
+                    window.location.href+="message";
                 }
             });
         })
